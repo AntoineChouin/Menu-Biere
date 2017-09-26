@@ -1,0 +1,11 @@
+{
+  "name": "modularized-normalize-scss",
+  "version": "4.0.0",
+  "ignore": [
+    "**/.*",
+    "Gruntfile.js",
+    "node_modules",
+    "package.json",
+    "tmp"
+  ]
+}

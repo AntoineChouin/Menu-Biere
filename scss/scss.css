@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/base/_html.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/base/_body.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/html5/_blocks.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/html5/_inline-blocks.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/*
+ * Add the correct display in iOS 4-7.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/html5/_audio.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/html5/_progress.scss */
+progress {
+  vertical-align: baseline; }
+
+/*
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/html5/_hidden.scss */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/links/_fix-background.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/links/_fix-outline.scss */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_abbr.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_fix-bolder.scss */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 14, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_fix-bolder.scss */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_dfn.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_headings.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_mark.scss */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_small.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_sub-and-sup.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 14, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_sub-and-sup.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 18, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/text-level/_sub-and-sup.scss */
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/embed/_img.scss */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/embed/_svg.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/grouping/_fix-monospace.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/grouping/_figure.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/grouping/_hr.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * Change font properties to `inherit` in all browsers (opinionated).
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_fix-font.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_optgroup.scss */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ * 2. Show the overflow in Edge, Firefox, and IE.
+ */
+/* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_fix-overflow.scss */
+button,
+input,
+select {
+  /* 2 */
+  overflow: visible; }
+
+/**
+ * Remove the margin in Safari.
+ * 1. Remove the margin in Firefox and Safari.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_margin.scss */
+button,
+input,
+select,
+textarea {
+  /* 1 */
+  margin: 0; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_fix-text-transform.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Change the cursor in all browsers (opinionated).
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_cursor.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer; }
+
+/**
+ * Restore the default cursor to disabled elements unset by the previous rule.
+ */
+/* line 16, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_cursor.scss */
+[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS.
+ */
+/* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_button.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_fix-focus-inner.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 15, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_fix-focus-inner.scss */
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_fieldset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 8, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_legend.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_textarea.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_checkbox-and-radio.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_number.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * Correct the odd appearance of search inputs in Chrome and Safari.
+ */
+/* line 5, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_search.scss */
+[type="search"] {
+  -webkit-appearance: textfield; }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome on OS X and
+ * Safari on OS X.
+ */
+/* line 14, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/forms/_search.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 4, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+ul {
+  list-style: none;
+  text-decoration: none; }
+  /* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+  ul a {
+    text-decoration: none;
+    color: black; }
+
+/* line 1, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+.post-biere {
+  margin: 0;
+  padding: 0; }
+  /* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+  .post-biere section {
+    width: 100%;
+    order: 2;
+    flex: 1 1 auto; }
+  /* line 12, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+  .post-biere aside {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    align-self: stretch;
+    order: 1; }
+    /* line 19, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+    .post-biere aside img {
+      max-height: 100%;
+      max-width: 100%; }
+  /* line 24, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+  .post-biere footer {
+    width: 50%;
+    align-self: stretch;
+    order: 1; }
+
+/* line 13, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+body {
+  font-size: 100%;
+  padding-top: 70px; }
+
+/* line 37, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+.container {
+  width: 100%;
+  height: 100%; }
+  /* line 41, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .container-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid wheat;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  /* line 50, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .container-header {
+    margin-bottom: 1%; }
+    /* line 53, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+    .container-header h1 {
+      font-family: cursive;
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 38px;
+      line-height: 2.375rem; }
+  /* line 59, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .container-body {
+    width: calc(100% - 5%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0 2.5%; }
+    /* line 47, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+    .container-body article {
+      background-color: #FDCC68; }
+      /* line 49, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+      .container-body article header {
+        background-color: blue; }
+      /* line 52, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+      .container-body article section {
+        background-color: green; }
+      /* line 55, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+      .container-body article aside {
+        background-color: red; }
+      /* line 58, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+      .container-body article footer {
+        background-color: orange; }
+  /* line 69, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .container > footer {
+    background: #fef8b4; }
+
+/* line 75, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+.navbar {
+  background-color: beige;
+  color: #a90329; }
+  /* line 78, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* line 83, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .navbar li {
+    align-self: flex-start;
+    width: calc(100%/4 - 4%);
+    background: #a4ffea;
+    height: 100%;
+    text-align: center; }
+  /* line 92, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .navbar a {
+    line-height: 200%;
+    width: 100%;
+    height: 4em; }
+
+/* line 99, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+.post-biere {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap; }
+  /* line 21, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere::before, .post-biere::after {
+    content: ' ';
+    display: table;
+    flex-basis: 0;
+    order: 1; }
+  /* line 28, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere::after {
+    clear: both; }
+  /* line 119, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere header {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    order: 1;
+    flex: 1 2 auto;
+    align-self: flex-end; }
+    /* line 127, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+    .post-biere header h3 {
+      background: #aaa;
+      text-align: center;
+      font-size: 2em;
+      line-height: 150%; }
+    /* line 134, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+    .post-biere header p {
+      font-size: 100%;
+      text-align: right; }
+
+/*# sourceMappingURL=scss.css.map */

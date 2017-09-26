@@ -1,0 +1,12 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import "normalize/normalize.scss";
+ul{
+  list-style: none;
+  text-decoration:none;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+}

@@ -1,0 +1,88 @@
+      %section_item {
+        $aside: #aea;
+        $section: #eaa;
+        margin: 0;
+        padding: 0;
+        section {
+          width: 100%;
+          //          background: $section;
+          order: 2;
+          flex: 1 1 auto;
+        }
+        aside {
+          margin: 0;
+          padding: 0;
+          //          background: $aside;
+          width: 50%;
+          align-self: stretch;
+          order: 1;
+          img {
+            max-height: 100%;
+            max-width: 100%;
+          }
+        }
+        footer {
+          width: 50%;
+          align-self: stretch;
+          order: 1;
+        }
+      }
+      
+      %article_backcolor {
+        header {
+          background: #aa3;
+        }
+        section {
+          background: #a3a;
+        }
+        aside {
+          background: #3aa;
+        }
+        footer {
+          background: #3a3;
+        }
+      }
+      
+      @mixin backcolor ($article, $header, $section, $aside, $footer) {
+        article {
+          background-color: $article;
+          header {
+            background-color: $header;
+          }
+          section {
+            background-color: $section;
+          }
+          aside {
+            background-color: $aside;
+          }
+          footer{
+            background-color: $footer;
+          }
+        }
+      }
+      
+      @mixin clearfix() {
+        &:before,
+        &:after {
+          content: "";
+          display: table;
+        }
+        &:after {
+          clear: both;
+        }
+      }
+      
+      @mixin font-size($sizeValue: 12) {
+        font-size: $sizeValue + px; //fallback for old browsers
+        font-size: (0.0625 * $sizeValue) + rem;
+      }
+      
+      @mixin line-height($heightValue: 20) {
+        line-height: $heightValue + px; //fallback for old browsers
+        line-height: (0.0625 * $heightValue) + rem;
+      }
+      
+      @mixin rhythm($sizeValue: 12, $heightValue: 20) {
+        @include font-size($sizeValue);
+        @include line-height($heightValue);
+      }
