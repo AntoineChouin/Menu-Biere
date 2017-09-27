@@ -1,4 +1,6 @@
 //https://github.com/wadim/responsive-font-size
+@import "base/base";
+@import "modulable/module";
 $color: #FDCC68;
 $darken: darken($color, 15%);
 $light: lighten($color, 15%);
@@ -8,8 +10,7 @@ $font-family1: 'Merriweather',
 serif;
 $font-family2: 'Cookie',
 cursive;
-@import "base/reset";
-@import "modulable/module";
+
 body {
   font-size: 100%;
 //  background: #a90329;
@@ -17,18 +18,7 @@ body {
 //  background: linear-gradient(to bottom, $color 0%, $darken 32%, $hue 43%, $light 54%, $color 80%);
 }
 
-@mixin clearfix {
-  &::before,
-  &::after {
-    content: ' ';
-    display: table;
-    flex-basis: 0;
-    order: 1;
-  }
-  &::after {
-    clear: both;
-  }
-}
+
 
 $div-color: #ae1;
 $article-color: #aee;
@@ -60,7 +50,9 @@ $article-border: lighten($article-color,
     width: calc(100% - 5%);
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
     margin: 0 2.5%;
     
 @include backcolor($color, blue, green, red, orange);
@@ -97,12 +89,12 @@ $article-border: lighten($article-color,
 }
 
 .post-biere {
-    $post-margin: 2%;
+  $post-margin: 1%;
   $post-width: 100%;
   $post-row: 2; 
   $post-dimen: calc((#{$post-width}/#{$post-row}) - (#{$post-margin}*2));
   
-  @include clearfix();
+//  @include clearfix();
   @extend %section_item;
   display: flex;
 
@@ -112,8 +104,8 @@ $article-border: lighten($article-color,
   flex-flow: row wrap;
   
 
-//  width: calc(#{$post-dimen});
-//  margin: $post-margin;
+  width: calc(#{$post-dimen});
+  margin: auto $post-margin;
  
 
   header {

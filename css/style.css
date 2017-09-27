@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -6,6 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -506,9 +506,14 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 2.5%;
 }
 
@@ -584,21 +589,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin: 2%;
-}
-
-.post-biere::before, .post-biere::after {
-  content: ' ';
-  display: table;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.post-biere::after {
-  clear: both;
+  width: 48%;
+  margin: auto 1%;
 }
 
 .post-biere header {
