@@ -425,7 +425,7 @@ ul {
   .post-biere section {
     width: 100%;
     order: 2;
-    flex: 1 1 auto; }
+    flex: 1 0 auto; }
   /* line 25, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
   .post-biere aside {
     margin: 0;
@@ -494,9 +494,10 @@ body {
         background-color: red; }
       /* line 70, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
       .container-body article footer {
-        background-color: orange; }
+        background-color: #ae1; }
   /* line 61, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
   .container > footer {
+    margin-top: 1%;
     background: #fef8b4; }
 
 /* line 67, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
@@ -529,8 +530,21 @@ body {
   align-items: flex-start;
   flex-flow: row wrap;
   width: calc(calc((100%/2) - (1%*2)));
-  margin: auto 1%; }
+  margin: 1% 1%; }
   /* line 111, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere:nth-child(even) footer {
+    align-self: flex-start; }
+  /* line 114, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere:nth-child(even) .post-img {
+    align-self: flex-end; }
+  /* line 119, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere:nth-child(odd) footer {
+    align-self: center;
+    order: 1; }
+  /* line 123, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere:nth-child(odd) .post-img {
+    align-self: center; }
+  /* line 128, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
   .post-biere header {
     width: 100%;
     margin-bottom: 0.5em;
@@ -538,13 +552,13 @@ body {
     order: 1;
     flex: 1 2 auto;
     align-self: flex-end; }
-    /* line 119, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+    /* line 136, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
     .post-biere header h3 {
       background: #aaa;
       text-align: center;
       font-size: 2em;
       line-height: 150%; }
-    /* line 126, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+    /* line 143, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
     .post-biere header p {
       font-size: 100%;
       text-align: right; }

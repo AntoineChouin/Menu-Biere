@@ -55,11 +55,11 @@ $article-border: lighten($article-color,
     align-items: center;
     margin: 0 2.5%;
     
-@include backcolor($color, blue, green, red, orange);
+@include backcolor($color, blue, green, red, $div-color);
  
   }
   > footer {
-//    margin-bottom: 1%;
+    margin-top: 1%;
     background: $hue;
   }
 }
@@ -105,8 +105,25 @@ $article-border: lighten($article-color,
   
 
   width: calc(#{$post-dimen});
-  margin: auto $post-margin;
+  margin: 1% $post-margin;
  
+  &:nth-child(even){
+    footer{
+      align-self: flex-start;
+    }
+    .post-img{
+      align-self: flex-end;
+    }
+  }
+    &:nth-child(odd){
+    footer{
+      align-self: center;
+      order:1;
+    }
+    .post-img{
+      align-self: center;
+    }
+  }
 
   header {
     width: 100%;
