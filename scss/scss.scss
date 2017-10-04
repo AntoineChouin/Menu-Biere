@@ -1,67 +1,13 @@
-//https://github.com/wadim/responsive-font-size
 @import "base/base";
 @import "modulable/module";
-$color: #FDCC68;
-$darken: darken($color, 15%);
-$light: lighten($color, 15%);
-$hue: adjust-hue($light, 15%);
-@import url('https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700');
-$font-family1: 'Merriweather',
-serif;
-$font-family2: 'Cookie',
-cursive;
+@import "grid/grid";
+
 
 body {
   font-size: 100%;
-//  background: #a90329;
+  //  background: #a90329;
   padding-top: 70px;
-//  background: linear-gradient(to bottom, $color 0%, $darken 32%, $hue 43%, $light 54%, $color 80%);
-}
-
-
-
-$div-color: #ae1;
-$article-color: #aee;
-$article-border: lighten($article-color,
-25%);
-.container {
-  width: 100%;
-  height: 100%;
-//  background: $div-color;
-  &-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-bottom: 4px solid wheat;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  &-header {
-//    background: lighten($div-color, 25%);
-    margin-bottom: 1%;
-    h1 {
-      font-family: cursive;
-      @include rhythm(32,
-      38);
-    }
-  }
-  &-body {
-    width: calc(100% - 5%);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: space-around;
-    align-items: center;
-    margin: 0 2.5%;
-    
-@include backcolor($color, blue, green, red, $div-color);
- 
-  }
-  > footer {
-    margin-top: 1%;
-    background: $hue;
-  }
+  background: linear-gradient(to bottom, $color 0%, $darken23 20%, $light32 40%, $light 60%, $color 88%);
 }
 
 .navbar {
@@ -77,8 +23,7 @@ $article-border: lighten($article-color,
     align-self: flex-start;
     width: calc(100%/4 - 4%);
     background: #a4ffea; //    margin: 0 2%;
-  
-    height: 100%; 
+    height: 100%;
     text-align: center;
   }
   a {
@@ -88,70 +33,37 @@ $article-border: lighten($article-color,
   }
 }
 
+
 .post-biere {
   $post-margin: 1%;
   $post-width: 100%;
-  $post-row: 2; 
+  $post-row: 2;
   $post-dimen: calc((#{$post-width}/#{$post-row}) - (#{$post-margin}*2));
   
-//  @include clearfix();
-  @extend %section_item;
+  @include clearfix();
+//  @extend %section_item;
   display: flex;
-
-  align-content: stretch;
+  align-content: space-between;
   justify-content: space-around;
-  align-items:flex-start;
+  align-items: stretch;
   flex-flow: row wrap;
+  flex: 0 1 $post-dimen;
+
+  margin: $post-margin;
+  font-family: $font-family2;
   
-
-  width: calc(#{$post-dimen});
-  margin: 1% $post-margin;
- 
-  &:nth-child(even){
-    footer{
-      align-self: flex-start;
-    }
-    .post-img{
-      align-self: flex-end;
-    }
+  &:last-child{
+//    width: 100%;
+    flex: 0 1 100%;
   }
-    &:nth-child(odd){
-    footer{
-      align-self: center;
-      order:1;
-    }
-    .post-img{
-      align-self: center;
-    }
-  }
-
+  
   header {
-    width: 100%;
-    margin-bottom: 0.5em;
-    margin-top: 0;
-    order: 1;
-    flex: 1 2 auto;
-    align-self: flex-end;
-//    border: 4px solid blue;
-    h3 {
-      background: #aaa;
-      text-align: center;
-//      padding: 15px;
-      font-size: 2em;
-      line-height: 150%;
-    }
-    p{
-    font-size: 100%;
-    text-align: right;
-      
-      }
+//    width: 100%;
+//    margin-bottom: 0.5em;
+//    margin-top: 0;
+//    order: 1;
+    flex: 0 1 100%;
+    align-self: center;
+    background: #aaa;
   }
-  .post-img {
-    
-    img{
-   
-    
-    }
-}
-
 }

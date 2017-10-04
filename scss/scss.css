@@ -1,11 +1,376 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700");
+/* line 12, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 21, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+button, input, select, textarea {
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+/* line 29, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+* {
+  background-repeat: no-repeat;
+  box-sizing: inherit; }
+
+/* line 34, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+::before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit; }
+
+/* line 41, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+::after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit; }
+
+/* line 48, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+html {
+  box-sizing: border-box;
+  cursor: default; }
+
+/* line 55, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+article {
+  display: block; }
+
+/* line 58, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+aside {
+  display: block; }
+
+/* line 61, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+footer {
+  display: block; }
+
+/* line 64, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+header {
+  display: block; }
+
+/* line 67, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+nav {
+  display: block; }
+  /* line 69, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+  nav ol {
+    list-style: none; }
+  /* line 72, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+  nav ul {
+    list-style: none; }
+
+/* line 76, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+section {
+  display: block; }
+
+/* line 79, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+body {
+  margin: 0; }
+
+/* line 82, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+/* line 86, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+figcaption {
+  display: block; }
+
+/* line 89, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+figure {
+  display: block;
+  margin: 1em 40px; }
+
+/* line 93, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+main {
+  display: block; }
+
+/* line 96, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+/* line 102, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 106, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+a {
+  background-color: transparent;
+  touch-action: manipulation; }
+
+/* line 110, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+/* line 115, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+b {
+  font-weight: inherit;
+  font-weight: bolder; }
+
+/* line 119, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+strong {
+  font-weight: inherit;
+  font-weight: bolder; }
+
+/* line 123, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+code {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 127, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+kbd {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 131, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 135, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+dfn {
+  font-style: italic; }
+
+/* line 138, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+mark {
+  background-color: #ffff00;
+  color: #000000; }
+
+/* line 142, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+small {
+  font-size: 80%; }
+
+/* line 145, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+sub {
+  bottom: -.25em; }
+
+/* line 149, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+sup {
+  top: -.5em; }
+
+/* line 153, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000000;
+  text-shadow: none; }
+
+/* line 159, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+::selection {
+  background-color: #b3d4fc;
+  color: #000000;
+  text-shadow: none; }
+
+/* line 165, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+audio {
+  vertical-align: middle;
+  display: inline-block; }
+  /* line 168, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+  audio:not([controls]) {
+    display: none;
+    height: 0; }
+
+/* line 173, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+canvas {
+  vertical-align: middle;
+  display: inline-block; }
+
+/* line 177, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+iframe {
+  vertical-align: middle; }
+
+/* line 180, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+/* line 184, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+svg {
+  vertical-align: middle;
+  fill: currentColor; }
+  /* line 187, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+  svg:not(:root) {
+    overflow: hidden; }
+
+/* line 191, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+video {
+  vertical-align: middle;
+  display: inline-block; }
+
+/* line 195, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+table {
+  border-collapse: collapse; }
+
+/* line 198, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+button {
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  touch-action: manipulation; }
+  /* line 204, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText; }
+
+/* line 208, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+input {
+  margin: 0;
+  overflow: visible;
+  touch-action: manipulation; }
+
+/* line 214, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+optgroup {
+  margin: 0; }
+
+/* line 217, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+select {
+  margin: 0;
+  text-transform: none;
+  touch-action: manipulation; }
+
+/* line 223, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+textarea {
+  margin: 0;
+  overflow: auto;
+  resize: vertical;
+  touch-action: manipulation; }
+
+/* line 230, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/* line 234, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/* line 238, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="reset"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/* line 242, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/* line 246, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+/* line 255, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 259, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 264, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 269, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="number"]::-webkit-inner-spin-button {
+  height: auto; }
+
+/* line 272, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 275, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="search"] {
+  outline-offset: -2px; }
+
+/* line 282, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+::-webkit-file-upload-button {
+  font: inherit; }
+
+/* line 285, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+details {
+  display: block; }
+
+/* line 288, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+menu {
+  display: block; }
+
+/* line 291, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+summary {
+  display: list-item;
+  touch-action: manipulation; }
+
+/* line 295, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+template {
+  display: none; }
+
+/* line 298, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+area {
+  touch-action: manipulation; }
+
+/* line 301, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+label {
+  touch-action: manipulation; }
+
+/* line 304, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[tabindex] {
+  touch-action: manipulation; }
+
+/* line 307, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[hidden] {
+  display: none; }
+
+/* line 310, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[aria-busy="true"] {
+  cursor: progress; }
+
+/* line 313, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[aria-controls] {
+  cursor: pointer; }
+
+/* line 316, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[aria-disabled] {
+  cursor: default; }
+
+/* line 319, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="reset"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/* line 322, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/* line 325, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/* line 328, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_reset.scss */
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute; }
+
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700");
 /* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/normalize/base/_html.scss */
 html {
   font-family: sans-serif;
@@ -408,51 +773,25 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* line 4, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_base.scss */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_base.scss */
 ul {
   list-style: none;
   text-decoration: none; }
-  /* line 7, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_base.scss */
+  /* line 9, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/base/_base.scss */
   ul a {
     text-decoration: none;
     color: black; }
 
-/* line 15, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-.post-biere {
-  margin: 0;
-  padding: 0; }
-  /* line 20, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-  .post-biere section {
-    width: 100%;
-    order: 2;
-    flex: 1 0 auto; }
-  /* line 25, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-  .post-biere aside {
-    margin: 0;
-    padding: 0;
-    width: 50%;
-    align-self: stretch;
-    order: 1; }
-    /* line 31, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-    .post-biere aside img {
-      max-height: 100%;
-      max-width: 100%; }
-  /* line 36, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-  .post-biere footer {
-    width: 50%;
-    align-self: stretch;
-    order: 1; }
+/* line 1, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
+html {
+  display: block; }
 
-/* line 14, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-body {
-  font-size: 100%;
-  padding-top: 70px; }
-
-/* line 27, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+/* line 4, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
 .container {
   width: 100%;
-  height: 100%; }
-  /* line 31, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  height: 100%;
+  font-family: "Merriweather", serif; }
+  /* line 9, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
   .container-nav {
     position: fixed;
     top: 0;
@@ -461,17 +800,17 @@ body {
     width: 100%;
     margin: 0;
     padding: 0; }
-  /* line 40, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  /* line 18, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
   .container-header {
     margin-bottom: 1%; }
-    /* line 43, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+    /* line 21, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
     .container-header h1 {
       font-family: cursive;
       font-size: 32px;
       font-size: 2rem;
       line-height: 38px;
       line-height: 2.375rem; }
-  /* line 49, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  /* line 27, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
   .container-body {
     width: calc(100% - 5%);
     display: flex;
@@ -480,87 +819,65 @@ body {
     align-content: space-around;
     align-items: center;
     margin: 0 2.5%; }
-    /* line 59, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-    .container-body article {
-      background-color: #FDCC68; }
-      /* line 61, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-      .container-body article header {
-        background-color: blue; }
-      /* line 64, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-      .container-body article section {
-        background-color: green; }
-      /* line 67, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-      .container-body article aside {
-        background-color: red; }
-      /* line 70, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
-      .container-body article footer {
-        background-color: #ae1; }
-  /* line 61, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-  .container > footer {
+  /* line 41, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/grid/_container.scss */
+  .container-footer {
     margin-top: 1%;
     background: #fef8b4; }
 
-/* line 67, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+/* line 6, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+body {
+  font-size: 100%;
+  padding-top: 70px;
+  background: linear-gradient(to bottom, #FDCC68 0%, #eda003 20%, white 40%, #fee6b4 60%, #FDCC68 88%); }
+
+/* line 13, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
 .navbar {
   background-color: beige;
   color: #a90329; }
-  /* line 70, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  /* line 16, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
   .navbar ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; }
-  /* line 75, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  /* line 21, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
   .navbar li {
     align-self: flex-start;
     width: calc(100%/4 - 4%);
     background: #a4ffea;
     height: 100%;
     text-align: center; }
-  /* line 84, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  /* line 29, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
   .navbar a {
     line-height: 200%;
     width: 100%;
     height: 4em; }
 
-/* line 91, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+/* line 37, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
 .post-biere {
   display: flex;
-  align-content: stretch;
+  align-content: space-between;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: stretch;
   flex-flow: row wrap;
-  width: calc(calc((100%/2) - (1%*2)));
-  margin: 1% 1%; }
-  /* line 111, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-  .post-biere:nth-child(even) footer {
-    align-self: flex-start; }
-  /* line 114, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-  .post-biere:nth-child(even) .post-img {
-    align-self: flex-end; }
-  /* line 119, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-  .post-biere:nth-child(odd) footer {
-    align-self: center;
+  flex: 0 1 calc((100%/2) - (1%*2));
+  margin: 1%;
+  font-family: "Cookie", cursive; }
+  /* line 2, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+  .post-biere::before, .post-biere::after {
+    content: '';
+    display: block;
+    flex-basis: 0;
     order: 1; }
-  /* line 123, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-  .post-biere:nth-child(odd) .post-img {
-    align-self: center; }
-  /* line 128, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  /* line 9, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/modulable/_module.scss */
+  .post-biere::after {
+    clear: both; }
+  /* line 55, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
+  .post-biere:last-child {
+    flex: 0 1 100%; }
+  /* line 60, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
   .post-biere header {
-    width: 100%;
-    margin-bottom: 0.5em;
-    margin-top: 0;
-    order: 1;
-    flex: 1 2 auto;
-    align-self: flex-end; }
-    /* line 136, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-    .post-biere header h3 {
-      background: #aaa;
-      text-align: center;
-      font-size: 2em;
-      line-height: 150%; }
-    /* line 143, /Users/Antoinechouinard/Documents/Programmation/Web/Biere/liste_Biere/codepen_JyeLMY/scss/scss.scss */
-    .post-biere header p {
-      font-size: 100%;
-      text-align: right; }
+    flex: 0 1 100%;
+    align-self: center;
+    background: #aaa; }
 
 /*# sourceMappingURL=scss.css.map */
