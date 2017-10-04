@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Merriweather:400,700');
+$font-family1: 'Merriweather',
+serif;
+$font-family2: 'Cookie',
+cursive;
+$color: #FDCC68;
+$radiant1: 23%;
+$radiant2: 32%;
+$radiant3: 50%;
+$radiant4: 69%;
+$radiant5: 86%;
+$darken23: darken($color, $radiant1);
+$light: lighten($color, 15%);
+$light32: lighten($color, $radiant2);
+$hue: adjust-hue($light, 15%);

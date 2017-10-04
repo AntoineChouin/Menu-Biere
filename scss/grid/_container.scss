@@ -1,0 +1,45 @@
+html{
+  display: block;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  //  background: $div-color;
+  font-family: $font-family1;
+  &-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid wheat;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  &-header {
+    //    background: lighten($div-color, 25%);
+    margin-bottom: 1%;
+    h1 {
+      font-family: cursive;
+      @include rhythm(32,
+      38);
+    }
+  }
+  &-body {
+    width: calc(100% - 5%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    margin: 0 2.5%;
+//    @include backcolor($color,
+//    blue,
+//    green,
+//    red,
+//    $div-color);
+  }
+  &-footer {
+    margin-top: 1%;
+    background: $hue;
+  }
+}

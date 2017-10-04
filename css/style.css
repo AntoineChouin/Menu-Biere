@@ -799,37 +799,14 @@ ul a {
   color: black;
 }
 
-.post-biere section {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 50%;
-  flex: 0 1 50%;
-}
-
-.post-biere aside {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 50%;
-  flex: 0 1 50%;
-}
-
-.post-biere aside img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.post-biere footer {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-body {
-  font-size: 100%;
-  padding-top: 70px;
+html {
+  display: block;
 }
 
 .container {
   width: 100%;
   height: 100%;
+  font-family: "Merriweather", serif;
 }
 
 .container-nav {
@@ -876,9 +853,15 @@ body {
   margin: 0 2.5%;
 }
 
-.container > footer {
+.container-footer {
   margin-top: 1%;
   background: #fef8b4;
+}
+
+body {
+  font-size: 100%;
+  padding-top: 70px;
+  background: linear-gradient(to bottom, #FDCC68 0%, #eda003 20%, white 40%, #fee6b4 60%, #FDCC68 88%);
 }
 
 .navbar {
@@ -918,13 +901,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
@@ -933,13 +916,7 @@ body {
   -ms-flex: 0 1 48%;
   flex: 0 1 48%;
   margin: 1%;
-  border: 1px solid green;
-  font-size: 24px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 20px;
-  line-height: 20px;
-  line-height: 1.25rem;
+  font-family: "Cookie", cursive;
 }
 
 .post-biere::before, .post-biere::after {
@@ -963,12 +940,6 @@ body {
 }
 
 .post-biere header {
-  width: 100%;
-  margin-bottom: 0.5em;
-  margin-top: 0;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -977,15 +948,4 @@ body {
   -ms-grid-row-align: center;
       align-self: center;
   background: #aaa;
-}
-
-.post-biere header h3 {
-  text-align: left;
-  font-size: 2em;
-  line-height: 150%;
-}
-
-.post-biere header p {
-  font-size: 100%;
-  text-align: right;
 }

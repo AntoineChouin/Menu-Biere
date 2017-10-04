@@ -1,5 +1,4 @@
 @mixin clearfix {
- 
   &::before,
   &::after {
     content: '';
@@ -15,26 +14,20 @@
 %section_item {
   $aside: #aea;
   $section: #eaa;
-
   section {
-//    order: 1;
-//    display: none;
+    //    order: 1;
+    //    display: none;
     flex: 0 1 50%;
-
   }
   aside {
- flex: 0 1 50%;
-//    order: 1;
+    flex: 0 1 50%;
+    //    order: 1;
     img {
       max-height: 100%;
       max-width: 100%;
     }
   }
-  footer {
-//    width: 50%;
-//    align-self: stretch;
-    order: 1;
-  }
+  footer {}
 }
 
 @mixin backcolor ($article, $header, $section, $aside, $footer) {
@@ -54,8 +47,6 @@
     }
   }
 }
-
-
 
 @mixin font-size($sizeValue: 12) {
   font-size: $sizeValue + px; //fallback for old browsers
